@@ -1,0 +1,51 @@
+{
+  "builder_name": "wikipedia",
+  "citation": "@ONLINE {wikidump,\n    author = {Wikimedia Foundation},\n    title  = {Wikimedia Downloads},\n    url    = {https://dumps.wikimedia.org}\n}\n",
+  "config_name": "20220301.simple",
+  "dataset_name": "wikipedia",
+  "dataset_size": 235060541,
+  "description": "Wikipedia dataset containing cleaned articles of all languages.\nThe datasets are built from the Wikipedia dump\n(https://dumps.wikimedia.org/) with one split per language. Each example\ncontains the content of one full Wikipedia article with cleaning to strip\nmarkdown and unwanted sections (references, etc.).\n",
+  "download_checksums": {
+    "data/20220301.simple/train-00000-of-00001.parquet": {
+      "num_bytes": 133886521,
+      "checksum": null
+    }
+  },
+  "download_size": 133886521,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://dumps.wikimedia.org",
+  "license": "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.",
+  "size_in_bytes": 368947062,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 235060541,
+      "num_examples": 205328,
+      "dataset_name": "wikipedia"
+    }
+  },
+  "version": {
+    "version_str": "2.0.0",
+    "description": "",
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  }
+}
